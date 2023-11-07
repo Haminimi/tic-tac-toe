@@ -89,4 +89,89 @@ const ticTacToe = (function() {
             display.textContent = `${currentPlayer}'s turn`;
         }
     };
+
+    //Minimax
+    function bestMove() {
+        return minimax(boardArray, aiPlayer).index;
+    }
+
+    function emptySpots(board) {
+        let indices = [];
+        for (let i = 0; i < board.length; i++) {
+            if (board[i] === '') {
+                indices.push(i);
+            }
+        }
+        return indices;
+    }
+
+    function checkWinForMinimax(board, player) {
+        let plays = board.reduce((a, e, i) => 
+            (e === player) ? a.concat(i) : a, []);
+        let gameWon = null;
+        for (let [index, win] of winningCombos.entries()) {
+            if (win.every(elem => plays.indexOf(elem) > -1)) {
+                gameWon = {index: index, player: player};
+                break;
+            }
+        }
+        return gameWon;
+    }
+
+    const aiPlayer = 'O';
+    const huPlayer = 'X';
+
+    function minimax(board, player) {
+        let availableSpots = emptySpots(boardArray);
+
+        if(checkWinForMinimax(board, huPlayer)) {
+            return {score: -10};
+        } else if (checkWinForMinimax(board, aiPlayer)) {
+            return {score: 10};
+        } else if (availableSpots.length === 0){
+            return {score: 0};
+        }
+
+        let moves = [];
+
+        for (let i = 0; i < availableSpots.length; i++) {
+            let move = {};
+            move.index = availableSpots[i];
+            board[availableSpots[i]] = player;
+
+            if (player === aiPlayer) {
+                let result = minimax(board, huPlayer);
+                move.score = result.score;
+            } else {
+                let result = minimax(board, aiPlayer);
+                move.score = result.score;
+            }
+
+            board[availableSpots[i]] = '';
+
+            moves.push(move);
+        }
+
+        let bestMove;
+
+        if (player === aiPlayer) {
+            let bestScore = -10000;
+            for (let i = 0; i < moves.length; i++) {
+                if (moves[i].score > bestScore) {
+                    bestScore = moves[i].score;
+                    bestMove = i;
+                }
+            }
+        } else {
+            let bestScore = 10000;
+            for (let i = 0; i < moves.length; i++) {
+                if (moves[i].score < bestScore) {
+                    bestScore = moves[i].score;
+                    bestMove = i;
+                }
+            }
+        }
+
+        return moves[bestMove];
+    }
 })();
