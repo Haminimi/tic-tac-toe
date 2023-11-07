@@ -259,4 +259,27 @@ const ticTacToe = (function() {
         OScore = 0;
         clearBtn.addEventListener('click', clearScore)
     })();
+
+
+    (function addThemeEventListeners() {
+        const pink = document.querySelector('#pink');
+        const green = document.querySelector('#green');
+        const purple = document.querySelector('#purple');
+    
+        pink.addEventListener('click', () => {
+            cells.forEach(cell => cell.style.backgroundColor = '#FDA1A2');
+        })
+    
+        green.addEventListener('click', () => {
+            cells.forEach(cell => cell.style.backgroundColor = 'lightgreen');
+        })
+    
+        purple.addEventListener('click', () => {
+            cells.forEach(cell => cell.style.backgroundColor = '#AA96DA');
+        })})();
+
+        
+    return {startGame}
 })();
+
+ticTacToe.startGame();
