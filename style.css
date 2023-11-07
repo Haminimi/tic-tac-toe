@@ -152,3 +152,52 @@ main {
 #purple {
     background-color: #AA96DA;
 }
+
+#display-and-gameboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 76vh;
+    width: 40%;
+}
+
+#display {
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: none;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+#display-text {
+    font-size: 25px;
+}
+
+#gameboard {
+    height: 80%;
+    width: 70%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+}
+
+.cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: var(--board-color);
+    cursor: pointer;
+}
+
+.winning-cell {
+    color: white;
+}
