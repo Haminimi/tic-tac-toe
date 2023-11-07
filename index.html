@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Permanent+Marker&family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+
+    <div id="container">
+        <header>Tic Tac Toe</header>
+        <main>
+            <div id="buttons-container">
+                <div id="game-buttons">
+                    <button id="restart" class="buttons">Restart</button>
+                    <button id="classic" class="buttons">Classic</button>
+                    <button id="AI" class="buttons active">AI</button>
+                </div>
+                <div id="theme-buttons">
+                    <button class="theme-button" id="pink"></button>
+                    <button class="theme-button" id="green"></button>
+                    <button class="theme-button" id="purple"></button>
+                </div>
+            </div>
+
+            <div id="display-and-gameboard">
+                <div id="display">
+                    <p id="display-text">X's turn</p>
+                </div>
+                <div id="gameboard">
+                    <div class="cells" id="0"></div>
+                    <div class="cells" id="1"></div>
+                    <div class="cells" id="2"></div>
+                    <div class="cells" id="3"></div>
+                    <div class="cells" id="4"></div>
+                    <div class="cells" id="5"></div>
+                    <div class="cells" id="6"></div>
+                    <div class="cells" id="7"></div>
+                    <div class="cells" id="8"></div>
+                </div>
+            </div>
+
+            <div id="score">
+                <div id="score-display">
+                    <p id="score-display-X">X's Wins : 0</p>
+                    <p id="score-display-O">O's Wins : O</p>
+                </div>
+                <button id="clear" class="buttons">Clear</button>
+            </div>
+
+        </main>
+        <footer>Built by Haminimi&nbsp;<a href="https://github.com/Haminimi"><i class="fa-brands fa-github"></i></a></footer>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
