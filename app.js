@@ -69,4 +69,24 @@ const ticTacToe = (function() {
             }
         }
     }
+
+
+    function aiMove() {
+        chosenSpot = bestMove();
+
+        cells.forEach(cell => {
+            if (cell.id == chosenSpot) {
+                cell.textContent = currentPlayer;
+            }
+        })
+        boardArray[chosenSpot] = currentPlayer;
+
+        checkForWinner();
+        if (gameOver) {
+            return;
+        } else {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            display.textContent = `${currentPlayer}'s turn`;
+        }
+    };
 })();
