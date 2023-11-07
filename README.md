@@ -8,8 +8,8 @@ The [Tic Tac Toe game](https://haminimi.github.io/tic-tac-toe/) built by [me](ht
 - **Restart Button:** This button allows a player to restart the game at any point. In the Classic mode, if the game is over, after the restart a new round starts with the player who lost or a randomly selected player if it was a draw. If the game is in the AI mode and the game is over or draw, a new round always begins with a human player, which is the player 'X'.
 - **Score Display and Clear Button:** The score display updates after each round, reflecting the results of previous games. The Clear button is available to reset the scores when desired.
 - **Gameboard Themes:** Players can personalize their gameboard with a choice of three themes: pink, green, and purple.
-- **Responsive Design:** The game provides consistent user experience and user-friendly interface across various screen sizes with two different layouts, for mobile phones and for larger screens.  
-
+- **Responsive Design:** The game provides consistent user experience and user-friendly interface across various screen sizes with two different layouts, for mobile phones and for larger screens.
+  <br>
 **To Do:**
 - **Alpha Beta Pruning:** Improve the existing minimax() function with Alpha Beta pruning. 
 - **Keyboard Support**
@@ -25,8 +25,8 @@ As I mentioned in the To Do section, the existing code could benefit from furthe
 **The project is built with:**
 - HTML
 - Vanilla JavaScript
-- Vanilla CSS  
-
+- Vanilla CSS
+  <br>
 - Git
 - IDE: Visual Studio Code
 ## Covered Topics
@@ -40,7 +40,7 @@ The project was extremely exciting, mainly because of the research and work rela
 
 One of the project's goals was to organize code using the Module Pattern. I encapsulated the entire code in the ticTacToe module, which returns only the startGame function, so the game can be initialized outside the module. However, the code could be further organized and modularized inside the main module. Additionally, as mentioned, the minimax() function can be further optimized using Alpha Beta pruning. Therefore, I may revisit the project in the future and refactor it a bit.
 ## Credits and Resources
-- Icon used for the favicon image is from ['Game icons' created by Freepik - Flaticon](https://www.flaticon.com/free-icons/game).  
+- Icon used for the favicon image is from ['Game icons' created by Freepik - Flaticon](https://www.flaticon.com/free-icons/game).  <br>
 
 **Minimax Algorithm Resources**
 - Previously mentioned [video](https://www.youtube.com/watch?v=P2TcQ3h0ipQ) by [FreeCodeCamp](https://www.freecodecamp.org/learn).
