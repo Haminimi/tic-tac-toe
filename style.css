@@ -55,3 +55,100 @@ header {
     padding: 10px;
     background-color: var(--background-color);
 }
+
+main {
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+#buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 76vh;
+    width: 30%;
+    flex-direction: column;
+}
+
+#game-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 61vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.buttons {
+    height: 14%;
+    width: 35%;
+    font-size: 28px;
+    border: 2px solid var(--buttons-active-color);
+    border-radius: 10px;
+    background-color: var(--buttons-color);
+    cursor: pointer;
+    transition: 0.05s ease-in-out;
+    box-shadow: 0px 2px 4px;
+    color: #101820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons:active {
+    transform: scale(0.95);
+}
+
+.active {
+    background-color: var(--buttons-active-color);
+    box-shadow: none;
+    color: white;
+    border: none;
+}
+
+#restart:active,
+#clear:active {
+    background-color: var(--buttons-active-color);
+    color: white;
+}
+
+#restart:active,
+#clear:active,
+#classic:active,
+#AI:active {
+    box-shadow: none;
+}
+
+#theme-buttons {
+    width: 40%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-button {
+    height: 45px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.theme-button:hover {
+    transform: scale(1.05);
+}
+
+#pink {
+    background-color:  #FDA1A2;
+}
+
+#green {
+    background-color:  lightgreen;
+}
+
+#purple {
+    background-color: #AA96DA;
+}
