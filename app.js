@@ -21,5 +21,26 @@ const ticTacToe = (function() {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6]
-        ];
+    ];
+
+
+    function startGame() {
+        gameBoard.addEventListener('click', handleHumanMove);
+    };
+
+    classic.addEventListener('click', () => {
+        if (mode === 'AI') {
+            mode = 'normal';
+            classic.classList.add('active');
+            AI.classList.remove('active');
+        }
+    })
+
+    AI.addEventListener('click', () => {
+        if (mode === 'normal') {
+            mode = 'AI';
+            AI.classList.add('active');
+            classic.classList.remove('active');
+        }
+    })
 })();
