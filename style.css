@@ -27,3 +27,20 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+
+:root {
+    --background-color: white;
+    --board-color: #FDA1A2;
+    --buttons-color: white;
+    --buttons-active-color: #101820;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    color: #101820;
+}
+
+#container {
+    height: 100vh;
+}
