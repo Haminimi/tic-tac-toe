@@ -174,4 +174,48 @@ const ticTacToe = (function() {
 
         return moves[bestMove];
     }
+
+
+    const checkForWinner = function() {
+        let winner = '';
+    
+        winningCombos.forEach(combo => {
+        if (boardArray[combo[0]] !== '' && boardArray[combo[0]] === boardArray[combo[1]] && boardArray[combo[1]] === boardArray[combo[2]]) {
+            winner = boardArray[combo[0]];
+            gameOver = true;
+
+            const cellIndex1 = combo[0];
+            const cellIndex2 = combo[1];
+            const cellIndex3 = combo[2];
+            const winningCell1 = document.querySelector('.cells:nth-child(' + (cellIndex1 + 1) + ')');
+            const winningCell2 = document.querySelector('.cells:nth-child(' + (cellIndex2 + 1) + ')');
+            const winningCell3 = document.querySelector('.cells:nth-child(' + (cellIndex3 + 1) + ')');
+            winningCell1.classList.add('winning-cell');
+            winningCell2.classList.add('winning-cell');
+            winningCell3.classList.add('winning-cell');
+        }
+        });
+    
+        if (gameOver) {
+        display.textContent = `${winner} is the winner! 🎉`;
+        if (winner === 'X') {
+            XScore++;
+            scoreX.textContent = `X's Wins : ${XScore}`;
+        } else if (winner === 'O') {
+            OScore++;
+            scoreO.textContent = `O's Wins : ${OScore}`;
+        }
+    
+    
+        return winner;
+        }
+
+        if (!boardArray.includes('')) {
+        display.textContent = 'Draw!';
+        gameOver = true;
+        return 'Draw';
+        }
+    
+        return '';
+    };
 })();
