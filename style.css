@@ -44,3 +44,14 @@ body {
 #container {
     height: 100vh;
 }
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    font-size: 45px;
+    padding: 10px;
+    background-color: var(--background-color);
+}
