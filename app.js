@@ -250,4 +250,13 @@ const ticTacToe = (function() {
         AI.addEventListener('click', restart);
         
     })();
+
+    (function clearScore() {
+        const clearBtn = document.querySelector('#clear');
+        scoreX.textContent = 'X\'s Wins : 0';
+        XScore = 0;
+        scoreO.textContent = 'O\'s Wins : 0';
+        OScore = 0;
+        clearBtn.addEventListener('click', clearScore)
+    })();
 })();
