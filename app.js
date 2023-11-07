@@ -218,4 +218,36 @@ const ticTacToe = (function() {
     
         return '';
     };
+
+
+    (function restart() {
+        const restartBtn = document.querySelector('#restart');
+        boardArray = ['', '', '', '', '', '', '', '', ''];
+        cells.forEach((cell) => cell.textContent = '');
+        gameOver = false;
+
+        if (mode === 'normal' && display.textContent === 'Draw!') {
+            const players = ['X', 'O']
+            const index = Math.floor(Math.random() * players.length);
+            currentPlayer = players[index];
+        } else if (mode === 'AI') {
+            currentPlayer = 'X';
+        } else {
+            currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+        }
+
+        display.textContent = `${currentPlayer}'s turn`;
+
+        for(let i = 0; i < gameBoard.children.length; i++) {
+            child = gameBoard.children[i];
+            if (child.classList.contains('winning-cell')) {
+                child.classList.remove('winning-cell')
+            }
+        }
+
+        restartBtn.addEventListener('click', restart);
+        classic.addEventListener('click', restart);
+        AI.addEventListener('click', restart);
+        
+    })();
 })();
