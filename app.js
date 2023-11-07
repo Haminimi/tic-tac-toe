@@ -43,4 +43,30 @@ const ticTacToe = (function() {
             classic.classList.remove('active');
         }
     })
+
+
+    function handleHumanMove(event) {
+        const cell = event.target;
+        if (gameOver) {
+            return;
+        } else if (cell.textContent === '') {
+            cell.textContent = currentPlayer;
+            const clickedIndex = Array.from(gameBoard.children).indexOf(cell);
+            boardArray[clickedIndex] = currentPlayer;
+            checkForWinner();
+            if (gameOver) {
+                return;
+            } else {
+                if (mode === 'normal') {
+                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                    display.textContent = `${currentPlayer}'s turn`;
+                } else if (mode === 'AI') {
+                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                    display.textContent = `${currentPlayer}'s turn`;
+                    aiMove();
+                }
+
+            }
+        }
+    }
 })();
