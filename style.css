@@ -223,3 +223,24 @@ main {
 #clear {
     height: 12%;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: var(--background-color);
+}
+
+.fa-github {
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    color: #101820;
+}
+
+.fa-github:hover {
+    transform: scale(1.15);
+}
