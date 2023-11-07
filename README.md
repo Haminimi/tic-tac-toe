@@ -9,7 +9,7 @@ The [Tic Tac Toe game](https://haminimi.github.io/tic-tac-toe/) built by [me](ht
 - **Score Display and Clear Button:** The score display updates after each round, reflecting the results of previous games. The Clear button is available to reset the scores when desired.
 - **Gameboard Themes:** Players can personalize their gameboard with a choice of three themes: pink, green, and purple.
 - **Responsive Design:** The game provides consistent user experience and user-friendly interface across various screen sizes with two different layouts, for mobile phones and for larger screens.
-  
+ 
 **To Do:**
 - **Alpha Beta Pruning:** Improve the existing minimax() function with Alpha Beta pruning. 
 - **Keyboard Support**
@@ -26,7 +26,7 @@ As I mentioned in the To Do section, the existing code could benefit from furthe
 - HTML
 - Vanilla JavaScript
 - Vanilla CSS
-  
+ 
 - Git
 - IDE: Visual Studio Code
 ## Covered Topics
@@ -41,7 +41,7 @@ The project was extremely exciting, mainly because of the research and work rela
 One of the project's goals was to organize code using the Module Pattern. I encapsulated the entire code in the ticTacToe module, which returns only the startGame function, so the game can be initialized outside the module. However, the code could be further organized and modularized inside the main module. Additionally, as mentioned, the minimax() function can be further optimized using Alpha Beta pruning. Therefore, I may revisit the project in the future and refactor it a bit.
 ## Credits and Resources
 - Icon used for the favicon image is from ['Game icons' created by Freepik - Flaticon](https://www.flaticon.com/free-icons/game).
-  
+ 
 **Minimax Algorithm Resources**
 - Previously mentioned [video](https://www.youtube.com/watch?v=P2TcQ3h0ipQ) by [FreeCodeCamp](https://www.freecodecamp.org/learn).
 - [Tic Tac Toe AI with Minimax Algorithm](https://thecodingtrain.com/challenges/154-tic-tac-toe-minimax) by [The Coding Train](https://thecodingtrain.com/).
