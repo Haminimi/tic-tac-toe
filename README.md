@@ -1,8 +1,8 @@
 # Tic Tac Toe With Minimax Algorithm
 ## Description
 Minimax is a recursive algorithm that is used in decision making and game theory to find the optimal move for a player. The AI mode in this game is based on the Minimax Algorithm, making it unbeatable. Against this AI, the best achievable result for a human player is a draw. This Tic Tac Toe project is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe). The Odin Project provides a high quality web development education maintained by an open source community.
-## Live Demo
-The [Tic Tac Toe game](https://haminimi.github.io/tic-tac-toe/) built by [me](https://github.com/Haminimi).
+## Live Preview
+The [Tic Tac Toe](https://haminimi.github.io/tic-tac-toe/) game built by [me](https://github.com/Haminimi).
 ## Main Features
 - **Classic and Unbeatable AI Mode:** In the Classic mode, two players compete in a traditional game. While the AI mode allows a player to play against the computer. The AI mode is based on the Minimax algorithm which is a recursive algorithm for choosing the next move, usually in a two-player game.
 - **Restart Button:** This button allows a player to restart the game at any point. In the Classic mode, if the game is over, after the restart a new round starts with the player who lost or a randomly selected player if it was a draw. If the game is in the AI mode and the game is over or draw, a new round always begins with a human player, which is the player 'X'.
@@ -26,10 +26,6 @@ As I mentioned in the To Do section, the existing code could benefit from furthe
 - HTML
 - Vanilla JavaScript
 - Vanilla CSS
-
-
-- Git
-- Visual Studio Code
 ## Covered Topics
 **This section mentions the main topics covered during project work and prior lessons**
 - Minimax Algorithm
