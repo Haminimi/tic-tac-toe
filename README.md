@@ -27,8 +27,9 @@ As I mentioned in the To Do section, the existing code could benefit from furthe
 - Vanilla JavaScript
 - Vanilla CSS
 
+
 - Git
-- IDE: Visual Studio Code
+- Visual Studio Code
 ## Covered Topics
 **This section mentions the main topics covered during project work and prior lessons**
 - Minimax Algorithm
