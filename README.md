@@ -1,5 +1,5 @@
 # Tic Tac Toe With Minimax Algorithm
-![Screenshot of the Tic Tac Toe game.](/assets/screenshot.png)
+![Screenshot of the Tic Tac Toe game.](/screenshot.png)
 ## Description
 Minimax is a recursive algorithm that is used in decision making and game theory to find the optimal move for a player. The AI mode in this game is based on the Minimax Algorithm, making it unbeatable. Against this AI, the best achievable result for a human player is a draw. This Tic Tac Toe project is a part of [The Odin Project](https://www.theodinproject.com/dashboard)'s [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe). The Odin Project provides a high quality web development education maintained by an open source community.
 ## Live Preview
