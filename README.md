@@ -54,3 +54,4 @@ One of the project's goals was to organize code using the Module Pattern. I enca
 - [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
 - Email: haminimi.dev@gmail.com
+## Happy coding!
