@@ -49,9 +49,4 @@ One of the project's goals was to organize code using the Module Pattern. I enca
 - [Tic Tac Toe AI with Minimax Algorithm](https://thecodingtrain.com/challenges/154-tic-tac-toe-minimax) by [The Coding Train](https://thecodingtrain.com/).
 - [Article series](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/) by [GeeksForGeeks](https://www.geeksforgeeks.org/).
 - [Minimax and Alpha Beta pruning](https://www.youtube.com/watch?v=l-hh51ncgDI) by [Sebastian Lague](https://www.youtube.com/@SebastianLague).
-## Author
-- [GitHub](https://github.com/Haminimi)
-- [Exercism](https://exercism.org/profiles/Haminimi)
-- [LeetCode](https://leetcode.com/Haminimi/)
-- Email: haminimi.dev@gmail.com
 ## Happy coding!
